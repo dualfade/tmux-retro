@@ -55,6 +55,11 @@ cyan)
   pane "bg=black,fg=colour51"
   ;;
 
+apple-ii)
+  # Apple Monitor II (A2M2010)
+  pane "bg=black,fg=colour40"
+  ;;
+
 list)
   echo "green green-bright amber amber-dark phosphor phosphor-dim c64 c64-dark cyan"
   ;;

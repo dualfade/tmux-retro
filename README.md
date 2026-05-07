@@ -30,6 +30,7 @@ phosphor-dim
 c64
 c64-dark
 cyan
+apple-ii
 
 ````
 
@@ -78,6 +79,7 @@ X  phosphor-dim
 C  c64
 B  c64-dark
 Y  cyan
+E  apple-ii
 ```
 
 ---
