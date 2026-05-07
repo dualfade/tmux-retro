@@ -1,0 +1,50 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.*
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+
+# Dependency directories
+node_modules/
+vendor/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Build output
+dist/
+build/
+out/
+target/
+
+# Coverage
+coverage/
+.coverage
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Git
+*.orig
