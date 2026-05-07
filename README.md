@@ -80,6 +80,7 @@ C  c64
 B  c64-dark
 Y  cyan
 E  apple-ii
+R  reset
 ```
 
 ---

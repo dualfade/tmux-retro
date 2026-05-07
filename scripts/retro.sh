@@ -60,6 +60,16 @@ apple-ii)
   pane "bg=black,fg=colour40"
   ;;
 
+reset)
+  tmux select-pane -P "fg=default,bg=colour235"
+
+  if [ -f "$HOME/.config/tmux/tmux.conf" ]; then
+    tmux source-file "$HOME/.config/tmux/tmux.conf"
+  elif [ -f "$HOME/.tmux.conf" ]; then
+    tmux source-file "$HOME/.tmux.conf"
+  fi
+  ;;
+
 list)
   echo "green green-bright amber amber-dark phosphor phosphor-dim c64 c64-dark cyan"
   ;;
