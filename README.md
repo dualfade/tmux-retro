@@ -88,7 +88,7 @@ bind-key + X  phosphor-dim
 bind-key + C  c64
 bind-key + B  c64-dark
 bind-key + Y  cyan
-bind-key + R  reset
+bind-key + Q  reset
 ```
 
 ---
