@@ -1,4 +1,3 @@
-```markdown
 # tmux-retro
 
 Retro CRT-style color themes for tmux. Inspired by classic terminals such as green phosphor, amber monitors, Commodore 64, and early hacker aesthetics.
@@ -166,7 +165,3 @@ tmux source-file ~/.tmux.conf
 ## License
 
 MIT
-
-```
-```
-
