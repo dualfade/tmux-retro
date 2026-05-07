@@ -61,8 +61,14 @@ apple-ii)
   ;;
 
 reset)
-  tmux select-pane -P "fg=default,bg=colour235"
+  # Reset pane override
+  tmux select-pane -P "default"
 
+  # Restore original window styles
+  tmux set -g window-style none
+  tmux set -g window-active-style "fg=default,bg=colour235"
+
+  # Reload tmux config
   if [ -f "$HOME/.config/tmux/tmux.conf" ]; then
     tmux source-file "$HOME/.config/tmux/tmux.conf"
   elif [ -f "$HOME/.tmux.conf" ]; then
@@ -71,13 +77,13 @@ reset)
   ;;
 
 list)
-  echo "green green-bright amber amber-dark phosphor phosphor-dim c64 c64-dark cyan"
+  echo "green green-bright amber amber-dark phosphor phosphor-dim c64 c64-dark cyan reset"
   ;;
 
 *)
   echo "Unknown theme: $theme" >&2
   echo "Available themes:" >&2
-  echo "  green green-bright amber amber-dark phosphor phosphor-dim c64 c64-dark cyan" >&2
+  echo "  green green-bright amber amber-dark phosphor phosphor-dim c64 c64-dark cyan reset" >&2
   exit 1
   ;;
 esac
