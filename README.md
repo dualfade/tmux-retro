@@ -145,6 +145,12 @@ tmux source-file ~/.config/tmux/tmux.conf
 
 - Samples
 
+<img width="1442" height="411" alt="image" src="https://github.com/user-attachments/assets/e127cac0-8166-4f8e-bd94-924ab0010469" />
+<img width="1437" height="408" alt="image" src="https://github.com/user-attachments/assets/438f15d4-d2bb-4338-b7f1-5c065be3cc09" />
+<img width="1434" height="412" alt="image" src="https://github.com/user-attachments/assets/d0fabbce-6736-4ff5-9145-ff6414930461" />
+<img width="1438" height="408" alt="image" src="https://github.com/user-attachments/assets/04a6e765-9a92-44c0-aa39-93826b776fa6" />
+<img width="1440" height="410" alt="image" src="https://github.com/user-attachments/assets/b67975d4-1ada-49b1-b481-d6258586cdc8" />
+
 
 ---
 
