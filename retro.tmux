@@ -1,29 +1,21 @@
 #!/usr/bin/env bash
 # shellcheck enable=all
 
-# NOTE: Check for conflicts --
-# tmux list-keys | grep bind-key
-# uncomment or change below to suite your needs --
-
 CURRENT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 RETRO_SCRIPT="$CURRENT_DIR/scripts/retro.sh"
 
-# Enter retro theme mode with: prefix + r
+# Enter CRT theme mode with: prefix + r
 tmux bind-key r switch-client -T retro
 
-# Original CRT / terminal-inspired themes
-tmux bind-key -T retro P run-shell "$RETRO_SCRIPT phosphor"
-tmux bind-key -T retro X run-shell "$RETRO_SCRIPT phosphor-dim"
-tmux bind-key -T retro A run-shell "$RETRO_SCRIPT amber"
-tmux bind-key -T retro G run-shell "$RETRO_SCRIPT green"
-tmux bind-key -T retro k run-shell "$RETRO_SCRIPT ibm"
-tmux bind-key -T retro J run-shell "$RETRO_SCRIPT orange"
-tmux bind-key -T retro W run-shell "$RETRO_SCRIPT white"
-tmux bind-key -T retro B run-shell "$RETRO_SCRIPT bluecrt"
-tmux bind-key -T retro Y run-shell "$RETRO_SCRIPT cyan"
-tmux bind-key -T retro C run-shell "$RETRO_SCRIPT c64"
-tmux bind-key -T retro V run-shell "$RETRO_SCRIPT c64-dark"
-tmux bind-key -T retro Q run-shell "$RETRO_SCRIPT reset"
+# Authentic CRT / terminal themes only
+tmux bind-key -T retro g run-shell "$RETRO_SCRIPT green"
+tmux bind-key -T retro a run-shell "$RETRO_SCRIPT amber"
+tmux bind-key -T retro p run-shell "$RETRO_SCRIPT phosphor"
+tmux bind-key -T retro d run-shell "$RETRO_SCRIPT phosphor-dim"
+tmux bind-key -T retro c run-shell "$RETRO_SCRIPT c64"
+tmux bind-key -T retro b run-shell "$RETRO_SCRIPT c64-dark"
+tmux bind-key -T retro y run-shell "$RETRO_SCRIPT cyan"
+tmux bind-key -T retro q run-shell "$RETRO_SCRIPT reset"
 
 default_theme="$(tmux show-option -gqv @retro_theme)"
 [ -n "$default_theme" ] && tmux run-shell "$RETRO_SCRIPT $default_theme"

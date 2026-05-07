@@ -75,35 +75,20 @@ prefix + I
 
 ---
 
-Here’s the updated **Key Bindings** section reflecting the new `prefix + r + <key>` model and only the CRT-style themes:
-
 ## Key Bindings
 
 Enter retro mode:
 
 ```
 
-prefix + r
-
-```
-
-Then press:
-
-```
-
-P  phosphor
-X  phosphor-dim
-A  amber
-G  green
-k  ibm
-J  orange
-W  white
-B  bluecrt
-Y  cyan
-C  c64
-V  c64-dark
-R  reset
-
+bind-key + g  green
+bind-key + a  amber
+bind-key + p  phosphor
+bind-key + d  phosphor-dim
+bind-key + c  c64
+bind-key + b  c64-dark
+bind-key + y  cyan
+bind-key + q  reset
 ```
 
 ---
