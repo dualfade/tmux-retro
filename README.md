@@ -96,7 +96,7 @@ X  phosphor-dim
 A  amber
 G  green
 K  ibm
-L  orange
+J  orange
 W  white
 B  bluecrt
 Y  cyan
