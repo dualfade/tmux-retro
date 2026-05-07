@@ -19,4 +19,8 @@ tmux bind-key -T retro E run-shell "$RETRO_SCRIPT apple-ii"
 tmux bind-key -T retro Q run-shell "$RETRO_SCRIPT reset"
 
 default_theme="$(tmux show-option -gqv @retro_theme)"
-[ -n "$default_theme" ] && tmux run-shell "$RETRO_SCRIPT $default_theme"
+if [ -n "$default_theme" ]; then
+  tmux run-shell "$RETRO_SCRIPT $default_theme"
+fi
+
+exit 0
