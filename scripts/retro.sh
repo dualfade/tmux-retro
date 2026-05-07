@@ -61,19 +61,15 @@ apple-ii)
   ;;
 
 reset)
-  # Reset pane override
+  # Clear per-pane override created by select-pane -P
   tmux select-pane -P "default"
 
-  # Restore original window styles
-  tmux set -g window-style none
+  # Restore your configured baseline styles
+  tmux set -g window-style "none"
   tmux set -g window-active-style "fg=default,bg=colour235"
 
-  # Reload tmux config
-  if [ -f "$HOME/.config/tmux/tmux.conf" ]; then
-    tmux source-file "$HOME/.config/tmux/tmux.conf"
-  elif [ -f "$HOME/.tmux.conf" ]; then
-    tmux source-file "$HOME/.tmux.conf"
-  fi
+  # Force tmux to redraw
+  tmux refresh-client -S
   ;;
 
 list)
