@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 # shellcheck enable=all
 
+# NOTE: Check for conflicts --
+# tmux list-keys | grep bind-key
+# uncomment or change below to suite your needs --
+
 #!/usr/bin/env bash
 
 CURRENT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
