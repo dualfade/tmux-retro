@@ -100,7 +100,12 @@ acid)
 
 reset)
   tmux select-pane -P "fg=default,bg=colour235"
-  tmux source-file ~/.tmux.conf
+
+  if [ -f "$HOME/.config/tmux/tmux.conf" ]; then
+    tmux source-file "$HOME/.config/tmux/tmux.conf"
+  elif [ -f "$HOME/.tmux.conf" ]; then
+    tmux source-file "$HOME/.tmux.conf"
+  fi
   ;;
 
 list)
