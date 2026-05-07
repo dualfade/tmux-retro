@@ -73,13 +73,13 @@ reset)
   ;;
 
 list)
-  echo "green green-bright amber amber-dark phosphor phosphor-dim c64 c64-dark cyan reset"
+  echo "green amber phosphor phosphor-dim c64 c64-dark cyan apple-ii reset"
   ;;
 
 *)
   echo "Unknown theme: $theme" >&2
   echo "Available themes:" >&2
-  echo "  green green-bright amber amber-dark phosphor phosphor-dim c64 c64-dark cyan reset" >&2
+  echo "=> green amber phosphor phosphor-dim c64 c64-dark cyan apple-ii reset" >&2
   exit 1
   ;;
 esac
