@@ -15,7 +15,7 @@ tmux bind-key -T retro X run-shell "$RETRO_SCRIPT phosphor-dim"
 tmux bind-key -T retro C run-shell "$RETRO_SCRIPT c64"
 tmux bind-key -T retro B run-shell "$RETRO_SCRIPT c64-dark"
 tmux bind-key -T retro Y run-shell "$RETRO_SCRIPT cyan"
-tmux bind-key -T retro R run-shell "$RETRO_SCRIPT reset"
+# tmux bind-key -T retro R run-shell "$RETRO_SCRIPT reset"
 
 default_theme="$(tmux show-option -gqv @retro_theme)"
 [ -n "$default_theme" ] && tmux run-shell "$RETRO_SCRIPT $default_theme"
