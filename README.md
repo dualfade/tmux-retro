@@ -1,20 +1,19 @@
 # tmux-retro
 
-Retro CRT-style color themes for tmux. Inspired by classic terminals such as green phosphor, amber monitors, Commodore 64, and early hacker aesthetics.
+Retro CRT-style color themes for tmux. Focused on historically accurate terminal displays such as green phosphor, amber monitors, and Commodore 64.
 
 ### Inspired by
-- [CRT DataBase](https://crtdatabase.com/)
-- [Cathode ray tube](https://en.wikipedia.org/wiki/Cathode_ray_tube)
+- https://crtdatabase.com/
+- https://en.wikipedia.org/wiki/Cathode_ray_tube
 
 ---
 
 ## Features
 
-- 20+ retro-inspired themes
-- Simple key bindings for switching themes
+- Authentic CRT color themes only
+- Clean key bindings using a dedicated tmux key table
 - Lightweight plugin with no dependencies
 - Optional default theme on startup
-- Easy reset back to your existing tmux configuration
 
 ---
 
@@ -23,28 +22,14 @@ Retro CRT-style color themes for tmux. Inspired by classic terminals such as gre
 ```
 
 green
-ibm
+green-bright
 amber
-orange
-white
-bluecrt
-cyan
-redcrt
-pipboy
-matrix
+amber-dark
 phosphor
 phosphor-dim
 c64
 c64-dark
-c64-bright
-hax
-neon
-hax-soft
-hax-red
-cyber
-tron
-acid
-reset
+cyan
 
 ````
 
@@ -58,13 +43,13 @@ Add to your `~/.tmux.conf`:
 
 ```tmux
 set -g @plugin 'dualfade/tmux-retro'
-set -g @retro_theme 'phosphor'   # optional
+set -g @retro_theme 'phosphor'   # optional default
 ````
 
 Reload tmux:
 
 ```bash
-tmux source-file ~/.tmux.conf
+tmux source-file ~/.config/tmux/tmux.conf
 ```
 
 Install plugins:
@@ -80,14 +65,19 @@ prefix + I
 Enter retro mode:
 
 ```
+prefix + r
+```
 
-bind-key + G  green
-bind-key + A  amber
-bind-key + P  phosphor
-bind-key + X  phosphor-dim
-bind-key + C  c64
-bind-key + B  c64-dark
-bind-key + Y  cyan
+Then press:
+
+```
+G  green
+A  amber
+P  phosphor
+X  phosphor-dim
+C  c64
+B  c64-dark
+Y  cyan
 ```
 
 ---
@@ -97,43 +87,40 @@ bind-key + Y  cyan
 Run directly:
 
 ```bash
-~/.tmux/plugins/tmux-retro/scripts/retro.sh phosphor
-~/.tmux/plugins/tmux-retro/scripts/retro.sh amber
-~/.tmux/plugins/tmux-retro/scripts/retro.sh c64
+~/.config/tmux/plugins/tmux-retro/scripts/retro.sh phosphor
+~/.config/tmux/plugins/tmux-retro/scripts/retro.sh amber
+~/.config/tmux/plugins/tmux-retro/scripts/retro.sh c64
 ```
 
 List available themes:
 
 ```bash
-~/.tmux/plugins/tmux-retro/scripts/retro.sh list
+~/.config/tmux/plugins/tmux-retro/scripts/retro.sh list
 ```
 
 ---
 
-## Reset Behavior
+## Notes
 
-The reset command restores pane styling and reloads your tmux configuration:
+* Themes are intentionally minimal and monochrome to reflect real CRT hardware
+* No reset key is bound to avoid conflicts with existing tmux configurations
+* To restore your default appearance, reload your tmux config:
 
 ```bash
-tmux select-pane -P "fg=default,bg=colour235"
-tmux source-file ~/.tmux.conf
+tmux source-file ~/.config/tmux/tmux.conf
 ```
 
 ---
 
 ## Key Binding Conflicts
 
-To check existing bindings:
+To inspect your current bindings:
 
 ```bash
 tmux list-keys | grep bind-key
 ```
 
-If conflicts occur, you can modify key bindings in `retro.tmux` or use a prompt-based selector:
-
-```tmux
-bind-key r command-prompt -p "retro theme:" "run-shell '~/.tmux/plugins/tmux-retro/scripts/retro.sh %%'"
-```
+If needed, you can modify bindings in `retro.tmux`.
 
 ---
 
@@ -142,13 +129,13 @@ bind-key r command-prompt -p "retro theme:" "run-shell '~/.tmux/plugins/tmux-ret
 Clone locally:
 
 ```bash
-git clone https://github.com/dualfade/tmux-retro ~/.tmux/plugins/tmux-retro
+git clone https://github.com/dualfade/tmux-retro ~/.config/tmux/plugins/tmux-retro
 ```
 
 Reload tmux:
 
 ```bash
-tmux source-file ~/.tmux.conf
+tmux source-file ~/.config/tmux/tmux.conf
 ```
 
 ---
@@ -158,7 +145,7 @@ tmux source-file ~/.tmux.conf
 - Samples
 
 
---
+---
 
 ## License
 
