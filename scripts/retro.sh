@@ -54,9 +54,9 @@ reset)
   # Clear per-pane override created by select-pane -P
   tmux select-pane -P "default"
 
-  # Restore your configured baseline styles
-  tmux set -g window-style "none"
-  tmux set -g window-active-style "fg=default,bg=colour235"
+  # Restore tmux/user theme defaults instead of hardcoding colors
+  tmux set -g window-style default
+  tmux set -g window-active-style default
 
   # Force tmux to redraw
   tmux refresh-client -S
