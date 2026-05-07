@@ -21,10 +21,8 @@ Retro CRT-style color themes for tmux. Focused on historically accurate terminal
 
 ```
 
-green
-green-bright
 amber
-amber-dark
+amber-p3
 phosphor
 phosphor-dim
 c64
@@ -72,8 +70,8 @@ prefix + r
 Then press:
 
 ```
-G  green
 A  amber
+G  amber-p3 
 P  phosphor
 X  phosphor-dim
 C  c64

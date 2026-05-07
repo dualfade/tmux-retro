@@ -8,7 +8,7 @@ RETRO_SCRIPT="$CURRENT_DIR/scripts/retro.sh"
 tmux bind-key r switch-client -T retro
 
 # Authentic CRT / terminal themes only
-tmux bind-key -T retro G run-shell "$RETRO_SCRIPT green"
+tmux bind-key -T retro G run-shell "$RETRO_SCRIPT amber-p3"
 tmux bind-key -T retro A run-shell "$RETRO_SCRIPT amber"
 tmux bind-key -T retro P run-shell "$RETRO_SCRIPT phosphor"
 tmux bind-key -T retro X run-shell "$RETRO_SCRIPT phosphor-dim"

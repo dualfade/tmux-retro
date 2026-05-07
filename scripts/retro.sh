@@ -10,24 +10,14 @@ pane() {
 }
 
 case "$theme" in
-green)
-  # Green phosphor terminal
-  pane "bg=black,fg=colour40"
-  ;;
-
-green-bright)
-  # Brighter green phosphor
-  pane "bg=black,fg=colour46"
+amber-p3)
+  # P3 Amber
+  pane "bg=black,fg=colour136"
   ;;
 
 amber)
   # Amber phosphor monitor
   pane "bg=black,fg=colour214"
-  ;;
-
-amber-dark)
-  # Darker orange amber
-  pane "bg=black,fg=colour208"
   ;;
 
 phosphor)
@@ -73,13 +63,13 @@ reset)
   ;;
 
 list)
-  echo "green amber phosphor phosphor-dim c64 c64-dark cyan apple-ii reset"
+  echo "amber amber-p3 phosphor phosphor-dim c64 c64-dark cyan apple-ii reset"
   ;;
 
 *)
   echo "Unknown theme: $theme" >&2
   echo "Available themes:" >&2
-  echo "=> green amber phosphor phosphor-dim c64 c64-dark cyan apple-ii reset" >&2
+  echo "=> amber amber-p3 phosphor phosphor-dim c64 c64-dark cyan apple-ii reset" >&2
   exit 1
   ;;
 esac
