@@ -168,6 +168,8 @@ tmux source-file ~/.tmux.conf
 
 ## Screenshots
 
+- Samples
+
 <img width="1435" height="411" alt="image" src="https://github.com/user-attachments/assets/3285eb01-31eb-4c19-96d1-048eed387c3a" />
 <img width="1433" height="413" alt="image" src="https://github.com/user-attachments/assets/ee9d154d-6300-49d2-acd3-8f351704a29b" />
 <img width="1435" height="410" alt="image" src="https://github.com/user-attachments/assets/8b14ad3f-f6a9-4745-bb6f-6f19a1b23310" />
