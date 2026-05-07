@@ -81,14 +81,14 @@ Enter retro mode:
 
 ```
 
-bind-key + g  green
-bind-key + a  amber
-bind-key + p  phosphor
-bind-key + d  phosphor-dim
-bind-key + c  c64
-bind-key + b  c64-dark
-bind-key + y  cyan
-bind-key + q  reset
+bind-key + G  green
+bind-key + A  amber
+bind-key + P  phosphor
+bind-key + X  phosphor-dim
+bind-key + C  c64
+bind-key + B  c64-dark
+bind-key + Y  cyan
+bind-key + R  reset
 ```
 
 ---
