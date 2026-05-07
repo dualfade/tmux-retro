@@ -75,32 +75,35 @@ prefix + I
 
 ---
 
+Here’s the updated **Key Bindings** section reflecting the new `prefix + r + <key>` model and only the CRT-style themes:
+
 ## Key Bindings
 
+Enter retro mode:
+
 ```
-prefix + P  phosphor
-prefix + A  amber
-prefix + G  green
-prefix + I  ibm
-prefix + O  orange
-prefix + W  white
-prefix + B  bluecrt
-prefix + Y  cyan
-prefix + D  redcrt
-prefix + F  pipboy
-prefix + M  matrix
-prefix + X  phosphor-dim
-prefix + C  c64
-prefix + V  c64-dark
-prefix + N  c64-bright
-prefix + H  hax
-prefix + E  neon
-prefix + S  hax-soft
-prefix + Z  hax-red
-prefix + U  cyber
-prefix + T  tron
-prefix + Q  acid
-prefix + R  reset
+
+prefix + r
+
+```
+
+Then press:
+
+```
+
+P  phosphor
+X  phosphor-dim
+A  amber
+G  green
+I  ibm
+O  orange
+W  white
+B  bluecrt
+Y  cyan
+C  c64
+V  c64-dark
+R  reset
+
 ```
 
 ---
@@ -169,12 +172,6 @@ tmux source-file ~/.tmux.conf
 ## Screenshots
 
 - Samples
-
-<img width="1435" height="411" alt="image" src="https://github.com/user-attachments/assets/3285eb01-31eb-4c19-96d1-048eed387c3a" />
-<img width="1433" height="413" alt="image" src="https://github.com/user-attachments/assets/ee9d154d-6300-49d2-acd3-8f351704a29b" />
-<img width="1435" height="410" alt="image" src="https://github.com/user-attachments/assets/8b14ad3f-f6a9-4745-bb6f-6f19a1b23310" />
-<img width="1435" height="416" alt="image" src="https://github.com/user-attachments/assets/1ec42a01-43f5-46a3-aa24-25f814e225f6" />
-<img width="1430" height="404" alt="image" src="https://github.com/user-attachments/assets/fd96fd59-0753-44e4-8eba-9dc79c36df54" />
 
 
 --

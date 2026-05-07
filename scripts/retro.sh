@@ -38,18 +38,6 @@ cyan)
   pane "bg=black,fg=colour51"
   ;;
 
-redcrt)
-  pane "bg=black,fg=colour196"
-  ;;
-
-pipboy)
-  pane "bg=colour22,fg=colour118"
-  ;;
-
-matrix)
-  pane "bg=black,fg=colour82"
-  ;;
-
 phosphor)
   pane "bg=black,fg=colour250"
   ;;
@@ -66,38 +54,6 @@ c64-dark)
   pane "bg=colour19,fg=colour111"
   ;;
 
-c64-bright)
-  pane "bg=blue,fg=cyan"
-  ;;
-
-hax)
-  pane "bg=black,fg=colour46"
-  ;;
-
-neon)
-  pane "bg=colour16,fg=colour82"
-  ;;
-
-hax-soft)
-  pane "bg=colour234,fg=colour118"
-  ;;
-
-hax-red)
-  pane "bg=black,fg=colour196"
-  ;;
-
-cyber)
-  pane "bg=colour16,fg=colour141"
-  ;;
-
-tron)
-  pane "bg=colour16,fg=colour51"
-  ;;
-
-acid)
-  pane "bg=black,fg=colour118"
-  ;;
-
 reset)
   tmux select-pane -P "fg=default,bg=colour235"
 
@@ -109,12 +65,13 @@ reset)
   ;;
 
 list)
-  echo "green ibm amber orange white bluecrt cyan redcrt pipboy matrix phosphor phosphor-dim c64 c64-dark c64-bright hax neon hax-soft hax-red cyber tron acid reset"
+  echo "green ibm amber orange white bluecrt cyan phosphor phosphor-dim c64 c64-dark reset"
   ;;
 
 *)
   echo "Unknown theme: $theme" >&2
-  echo "Run: $0 list" >&2
+  echo "Available themes:" >&2
+  echo "  green ibm amber orange white bluecrt cyan phosphor phosphor-dim c64 c64-dark reset" >&2
   exit 1
   ;;
 esac
