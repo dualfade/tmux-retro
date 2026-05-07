@@ -13,9 +13,9 @@ tmux bind-key r switch-client -T retro
 
 # Original CRT / terminal-inspired themes
 tmux bind-key -T retro G run-shell "$RETRO_SCRIPT green"
-tmux bind-key -T retro I run-shell "$RETRO_SCRIPT ibm"
+tmux bind-key -T retro K run-shell "$RETRO_SCRIPT ibm"
 tmux bind-key -T retro A run-shell "$RETRO_SCRIPT amber"
-tmux bind-key -T retro O run-shell "$RETRO_SCRIPT orange"
+tmux bind-key -T retro L run-shell "$RETRO_SCRIPT orange"
 tmux bind-key -T retro W run-shell "$RETRO_SCRIPT white"
 tmux bind-key -T retro B run-shell "$RETRO_SCRIPT bluecrt"
 tmux bind-key -T retro Y run-shell "$RETRO_SCRIPT cyan"
